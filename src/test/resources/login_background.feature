@@ -4,7 +4,7 @@ Feature: User Login
   In order to access my account
 
   Background:
-    Given I open the app url "https://offermanager.ref.o2.co.uk/offerManager"
+    Given I open the app url "https://powerful-citadel-6254.herokuapp.com/"
 
   @Login
   Scenario: As a registered user I should be able to login

@@ -18,7 +18,7 @@ public class LoginStepDefs {
 
     @Given("^I open the app url$")
     public void I_open_the_app_url() throws Throwable {
-        browser.get("https://offermanager.ref.o2.co.uk/offerManager");
+        browser.get("https://powerful-citadel-6254.herokuapp.com/");
     }
 
     @When("^I submit my credentials$")
@@ -30,7 +30,7 @@ public class LoginStepDefs {
 
     @Then("^I should be logged in$")
     public void I_should_be_logged_in() throws Throwable {
-        assertThat(browser.getCurrentUrl(), is("https://offermanager.ref.o2.co.uk/offerManager/managerDashboard/"));
+        assertThat(browser.getCurrentUrl(), is("https://powerful-citadel-6254.herokuapp.com/"));
         assertThat(browser.findElement(By.id("idLinkRegisterMerchant")).isDisplayed(), is(true));
 
     }

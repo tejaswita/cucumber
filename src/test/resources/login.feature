@@ -8,7 +8,7 @@ Feature: User Login
 
   @Ignore
   Scenario: Example with class
-    Given I open the app url "https://offermanager.ref.o2.co.uk/offerManager"
+    Given I open the app url "https://powerful-citadel-6254.herokuapp.com/"
     When I submit my credentials:
       | username | password |
       | s        | P@ssw0rd |
@@ -16,7 +16,7 @@ Feature: User Login
 
   @Ignore
   Scenario Outline: Data driven example
-    Given I open the app url "https://offermanager.ref.o2.co.uk/offerManager"
+    Given I open the app url "https://powerful-citadel-6254.herokuapp.com/"
     When I submit "<username>" and "<password>"
     Then I should get "<error>"
     Examples:
